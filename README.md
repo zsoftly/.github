@@ -9,5 +9,5 @@ This repository holds organization-wide GitHub defaults for **github.com/zsoftly
 
 To publish: this repo must be **public** and named exactly **`.github`** under the `zsoftly` org.
 
-You can also add org-wide community health files here (issue/PR templates, `CODE_OF_CONDUCT.md`,
+Add org-wide community health files here too (issue/PR templates, `CODE_OF_CONDUCT.md`,
 `SECURITY.md`, `CONTRIBUTING.md`). GitHub falls back to these for any repo that lacks its own.

@@ -1,14 +1,9 @@
 <div align="center">
 
-<!-- Optional hero banner. Add profile/assets/banner.png (≈1280×360) and uncomment:
-<img src="./assets/banner.png" alt="ZSoftly" width="100%">
--->
+<img src="./assets/banner.png" alt="ZSoftly — Cloud, unified." width="100%">
 
-# ZSoftly
-
-### Cloud, unified.
-
-**AI & Cloud-First IT Solutions.** Canadian sovereign cloud, billing, and platform in one place.
+**AI & Cloud-First IT Solutions.** Sovereign cloud, billing, and platform in one place — built for
+the people, by the people.
 
 [![Website](https://img.shields.io/badge/Website-zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://zcp.zsoftly.ca)
 [![Cloud Platform](https://img.shields.io/badge/Cloud-zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://cloud.zcp.zsoftly.ca)
@@ -20,7 +15,7 @@
 
 ## What we build
 
-**ZSoftly Cloud Platform (ZCP)** is a Canadian public cloud. It gives you compute, storage,
+**ZSoftly Cloud Platform (ZCP)** is a sovereign public cloud. It gives you compute, storage,
 networking, Kubernetes, and an S3-compatible object store, with unified billing and a single control
 plane. We also operate private cloud (ZPCP) for teams that need a dedicated, sovereign stack.
 
