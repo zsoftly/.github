@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family:'InterX'; src:local('Inter'); }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1600px; height:900px; overflow:hidden; }
+  .stage{
+    position:relative; width:1600px; height:900px;
+    font-family:'Inter','Inter Display',-apple-system,sans-serif;
+    background:
+      radial-gradient(ellipse 60% 85% at 42% 50%, #1d409a 0%, #11contained 0%, #0b1f55 34%, #04091f 66%, #00030e 100%);
+    overflow:hidden;
+  }
+  /* base + glow (kept separate to avoid typo issues) */
+  .stage{
+    /* one broad, soft, diffuse glow (no hard bright core) fading smoothly to dark navy */
+    background:
+      radial-gradient(ellipse 60% 98% at 46% 50%,
+        #143c9c 0%, #102f7e 22%, #0b2160 42%, #07163f 60%, #030c25 78%, #00040f 100%);
+  }
+  #bubbles{ position:absolute; inset:0; }
+  .b{ position:absolute; border-radius:50%;
+      background:radial-gradient(circle at 50% 50%, rgba(210,224,255,0.55), rgba(190,210,255,0.0) 70%); }
+  /* content safe band (~4:1) centered */
+  .icon{ position:absolute; left:120px; top:50%; transform:translateY(-50%); height:172px;
+         filter:drop-shadow(0 0 26px rgba(120,160,255,0.30)); }
+  .tag{ position:absolute; left:312px; right:600px; top:50%; transform:translateY(-50%);
+        text-align:center; line-height:1.0; font-weight:700; font-size:74px; letter-spacing:-1px; }
+  .tag div{ filter:drop-shadow(0 0 20px rgba(90,130,240,0.45)); }
+  .s1{ color:#ffffff; }
+  .s2{ color:#d9e3fb; }
+  .s3{ color:#aec7fe; }
+  .card{ position:absolute; right:96px; top:50%; transform:translateY(-50%); width:472px; height:204px;
+         border-radius:22px; border:1px solid rgba(255,255,255,0.18);
+         background:linear-gradient(160deg, rgba(255,255,255,0.10), rgba(255,255,255,0.03));
+         box-shadow:inset 0 1px 0 rgba(255,255,255,0.12), 0 12px 40px rgba(0,0,0,0.25);
+         display:flex; align-items:center; justify-content:center; }
+  .card p{ width:86%; text-align:center; color:#eef2ff; font-weight:400;
+           font-size:24px; line-height:1.5; }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div id="bubbles"></div>
+    <img class="icon" src="brand/zsoftly-icon-white.png">
+    <div class="tag">
+      <div class="s1">Sovereign.</div>
+      <div class="s2">Open.</div>
+      <div class="s3">Unified.</div>
+    </div>
+    <div class="card"><p>ZSoftly Cloud Platform<br>unifies compute, storage,<br>networking and Kubernetes.</p></div>
+  </div>
+<script>
+  // Deterministic pseudo-random bubble field (bokeh)
+  let seed = 20260619;
+  function rnd(){ seed = (seed*1664525 + 1013904223) % 4294967296; return seed/4294967296; }
+  const host = document.getElementById('bubbles');
+  const N = 130;
+  for(let i=0;i<N;i++){
+    const b = document.createElement('div'); b.className='b';
+    const x = rnd()*100;                       // spread across full width
+    const y = rnd()*100;
+    const size = 4 + Math.pow(rnd(),2.4)*30;    // small bokeh: ~4-34px, mostly tiny
+    const op = 0.07 + rnd()*0.33;
+    b.style.left = x+'%'; b.style.top = y+'%';
+    b.style.width = size+'px'; b.style.height = size+'px';
+    b.style.opacity = op.toFixed(2);
+    if(rnd()>0.82){ // a few soft rings
+      b.style.background='none';
+      b.style.boxShadow='0 0 0 '+(1+rnd()*2).toFixed(1)+'px rgba(200,220,255,'+(0.12+rnd()*0.2).toFixed(2)+')';
+      b.style.filter='blur(0.5px)';
+    }
+    host.appendChild(b);
+  }
+</script>
+</body>
+</html>
