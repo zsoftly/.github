@@ -8,6 +8,7 @@ the people, by the people.
 [![Website](https://img.shields.io/badge/Website-zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://zcp.zsoftly.ca)
 [![Cloud Platform](https://img.shields.io/badge/Cloud-zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://cloud.zcp.zsoftly.ca)
 [![Docs](https://img.shields.io/badge/Docs-docs.zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://docs.zcp.zsoftly.ca)
+[![Community](https://img.shields.io/badge/Community-Join%20on%20Slack-4a154b?style=for-the-badge)](https://zcp.zsoftly.ca/community)
 
 </div>
 
@@ -28,6 +29,13 @@ in the open. Our public projects:
 | [**zcp-docs**](https://github.com/zsoftly/zcp-docs)                             | Product documentation for ZCP, English and French.                   |
 | [**terraform-provider-zcp**](https://github.com/zsoftly/terraform-provider-zcp) | Terraform / OpenTofu provider for managing ZCP resources as code.    |
 
+## Join the community
+
+[Join the ZCP Community](https://zcp.zsoftly.ca/community) to ask questions, compare implementation
+notes, share projects, and connect with developers, cloud engineers, and platform teams building on
+ZCP. The community is hosted on Slack, a separate third-party service and not part of ZCP's
+sovereign infrastructure.
+
 ## Get started
 
 - **Try the platform:** [cloud.zcp.zsoftly.ca](https://cloud.zcp.zsoftly.ca). Sign up and deploy in
@@ -40,11 +48,20 @@ in the open. Our public projects:
   zcp profile add default
   ```
 
-## Contributing & feedback
+## Build with us
 
-Our docs and tools are open source. The fastest way to help is to
-**[open an issue](https://github.com/zsoftly/zcp-docs/issues)** or email
-**docs-support@zsoftly.ca**. Each repo's `CONTRIBUTING.md` explains how we review and ship changes.
+We are building ZCP for the people who use and operate it. Follow
+[ZSoftly on GitHub](https://github.com/zsoftly) for project updates. Star the tools you use to help
+others find them, and contribute documentation, examples, issues, integrations, and code.
+
+- [Star the ZCP CLI](https://github.com/zsoftly/zcp-cli)
+- [Star the Terraform/OpenTofu provider](https://github.com/zsoftly/terraform-provider-zcp)
+- [Contribute to the documentation](https://github.com/zsoftly/zcp-docs/blob/main/CONTRIBUTING.md)
+- [Open a documentation issue](https://github.com/zsoftly/zcp-docs/issues)
+
+Each repository's `CONTRIBUTING.md` explains how we review and ship changes. For account-specific
+support, billing, incidents, or private technical matters, use the ZCP portal or official support
+process instead of public community channels.
 
 ## Connect
 
