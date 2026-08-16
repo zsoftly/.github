@@ -31,10 +31,12 @@ in the open. Our public projects:
 
 ## Join the community
 
-[Join the ZCP Community](https://zcp.zsoftly.ca/community) to ask questions, compare implementation
-notes, share projects, and connect with developers, cloud engineers, and platform teams building on
-ZCP. The community is hosted on Slack, a separate third-party service and not part of ZCP's
-sovereign infrastructure.
+[Join the ZCP Community on Slack](https://join.slack.com/t/zsoftlycloudp-exg5502/shared_invite/zt-469b56b2b-lG5HB2WnuntgwFG4UwfMew)
+to ask questions, compare implementation notes, share projects, and connect with developers, cloud
+engineers, and platform teams building on ZCP. Read the
+[community guidelines and information](https://zcp.zsoftly.ca/community) before posting. The
+community is hosted on Slack, a separate third-party service and not part of ZCP's sovereign
+infrastructure.
 
 ## Get started
 
