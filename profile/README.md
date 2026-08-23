@@ -17,37 +17,34 @@
 
 We design, build, and run cloud infrastructure and delivery pipelines for seed and early-stage
 SaaS/AI startups, in Canada, the UK, Asia, and anywhere else. Instead of hiring a DevOps team, you
-get ours. We work on AWS, Azure, on-prem, or our own cloud, with sovereignty, governance, and open
-source built in.
+get ours. We work on AWS, Azure, on-prem, or our own cloud, with sovereignty and open source built
+in.
 
 ## Our product
 
-**ZSoftly Cloud Platform (ZCP)** is the proof: a sovereign Canadian public cloud we built ourselves.
-Compute, storage, networking, Kubernetes, and S3-compatible object storage, for teams that want a
-Canadian home for their workloads.
+**ZSoftly Cloud Platform (ZCP)** is what we built with our own playbook: a sovereign Canadian public
+cloud. Compute, block and S3-compatible object storage, networking, and Kubernetes, for teams that
+want their workloads in Canada.
 
 ## Open source
 
 We ❤️ open source. Our platform is built on open foundations, and we develop and share our own tools
-in the open. Our public projects:
+in the open.
 
-| Project                                                                         | What it is                                 |
-| ------------------------------------------------------------------------------- | ------------------------------------------ |
-| [**zcp-cli**](https://github.com/zsoftly/zcp-cli)                               | Command-line interface for ZCP (Go).       |
-| [**terraform-provider-zcp**](https://github.com/zsoftly/terraform-provider-zcp) | Terraform / OpenTofu provider for ZCP.     |
-| [**zcp-docs**](https://github.com/zsoftly/zcp-docs)                             | Product documentation, English and French. |
+## Work with us
 
-## Get started
+**Need a cloud team?** Email [info@zsoftly.ca](mailto:info@zsoftly.ca) and tell us what you are
+building. We reply fast.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/zsoftly/zcp-cli/main/scripts/install.sh | bash
-zcp profile add default
-```
+**Want to try ZCP?** Sign up and get CA\$100 in credit, up to CA\$300 total. The CA\$1 card
+verification is credited back to your account, not refunded to your card. Offer ends December
+31, 2026.
+[Get started for free →](https://docs.zcp.zsoftly.ca/public-cloud/getting-started/introduction/)
 
-Questions?
+**Questions?**
 [Join us on Slack](https://join.slack.com/t/zsoftlycloudp-exg5502/shared_invite/zt-469b56b2b-lG5HB2WnuntgwFG4UwfMew)
-([guidelines](https://zcp.zsoftly.ca/community)). For account or billing support, use the ZCP
-portal.
+([guidelines](https://zcp.zsoftly.ca/community)). For account or billing support, log in to the
+[ZCP portal](https://cloud.zcp.zsoftly.ca).
 
 <div align="center">
 
