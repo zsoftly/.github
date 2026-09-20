@@ -6,7 +6,7 @@
   "scripts": {
     "fmt": "prettier --write \"**/*.{md,mdx,json,yml,yaml}\"",
     "fmt:check": "prettier --check \"**/*.{md,mdx,json,yml,yaml}\"",
-    "profile:check": "test -f profile/assets/zsoftly-github-banner.svg && grep -Fq './assets/zsoftly-github-banner.svg' profile/README.md"
+    "profile:check": "test -f profile/assets/zsoftly-github-banner.svg && test -f profile/assets/zsoftly-github-avatar.svg && test -f profile/assets/zsoftly-github-avatar-1024x1024.png && grep -Fq './assets/zsoftly-github-banner.svg' profile/README.md && grep -Fq 'https://zcp.zsoftly.ca/' profile/README.md && grep -Fq 'https://docs.zcp.zsoftly.ca/' profile/README.md && grep -Fq 'https://cloud.zcp.zsoftly.ca/' profile/README.md"
   },
   "devDependencies": {
     "prettier": "^3.8.3"
