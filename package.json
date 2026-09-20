@@ -5,7 +5,8 @@
   "description": "ZSoftly organization profile and shared GitHub defaults",
   "scripts": {
     "fmt": "prettier --write \"**/*.{md,mdx,json,yml,yaml}\"",
-    "fmt:check": "prettier --check \"**/*.{md,mdx,json,yml,yaml}\""
+    "fmt:check": "prettier --check \"**/*.{md,mdx,json,yml,yaml}\"",
+    "profile:check": "test -f profile/assets/zsoftly-github-banner.svg && grep -Fq './assets/zsoftly-github-banner.svg' profile/README.md"
   },
   "devDependencies": {
     "prettier": "^3.8.3"

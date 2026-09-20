@@ -1,54 +1,46 @@
 <div align="center">
 
-<img src="./assets/banner.webp" alt="ZSoftly — Cloud, unified." width="100%">
+<img src="./assets/zsoftly-github-banner.svg" alt="ZSoftly, Cloud Builders" width="100%">
 
-**Cloud Builders.** A Canadian DevOps and cloud engineering team for SaaS and AI startups anywhere.
+**Cloud Builders. Canadian cloud infrastructure and engineering for SaaS and AI startups.**
 
-[![Website](https://img.shields.io/badge/Website-zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://zcp.zsoftly.ca)
-[![Cloud Platform](https://img.shields.io/badge/Cloud-zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://cloud.zcp.zsoftly.ca)
-[![Docs](https://img.shields.io/badge/Docs-docs.zcp.zsoftly.ca-1f6feb?style=for-the-badge)](https://docs.zcp.zsoftly.ca)
-[![Community](https://img.shields.io/badge/Community-Join%20on%20Slack-4a154b?style=for-the-badge)](https://join.slack.com/t/zsoftlycloudp-exg5502/shared_invite/zt-469b56b2b-lG5HB2WnuntgwFG4UwfMew)
+[ZSoftly Cloud Platform](https://zcp.zsoftly.ca) · [Contact us](mailto:info@zsoftly.ca)
 
 </div>
 
 ---
 
-## What we do
+## What we build and operate
 
-We design, build, and run cloud infrastructure and delivery pipelines for seed and early-stage
-SaaS/AI startups, in Canada, the UK, Asia, and anywhere else. Instead of hiring a DevOps team, you
-get ours. We work on AWS, Azure, on-prem, or our own cloud, with sovereignty and open source built
-in.
+ZSoftly designs, builds, and operates cloud infrastructure for SaaS and AI startups. We work on
+cloud platforms, private cloud, DevOps, security, Kubernetes, automation, storage, and networking.
+We also build the engineering systems behind reliable software delivery.
 
-## Our product
+## ZSoftly Cloud Platform
 
-**ZSoftly Cloud Platform (ZCP)** is what we built with our own playbook: a sovereign Canadian public
-cloud. Compute, block and S3-compatible object storage, networking, and Kubernetes, for teams that
-want their workloads in Canada.
+**[ZSoftly Cloud Platform](https://zcp.zsoftly.ca)** is our Canadian public cloud and private-cloud
+offering. It provides compute, storage, networking, and Kubernetes for teams that need more control
+over where their infrastructure runs.
 
 ## Open source
 
-We ❤️ open source. Our platform is built on open foundations, and we develop and share our own tools
-in the open.
+We maintain and share open-source tools and automation for cloud infrastructure and platform
+operations.
 
-## Work with us
+## Connect
 
-**Need a cloud team?** Email [info@zsoftly.ca](mailto:info@zsoftly.ca) and tell us what you are
-building. We reply fast.
+For cloud infrastructure, platform engineering, or ZCP questions, email
+[info@zsoftly.ca](mailto:info@zsoftly.ca).
 
-**Want to try ZCP?** Sign up and get CA\$100 in credit, up to CA\$300 total. The CA\$1 card
-verification is credited back to your account, not refunded to your card. Offer ends December
-31, 2026.
-[Get started for free →](https://docs.zcp.zsoftly.ca/public-cloud/getting-started/introduction/)
-
-**Questions?**
-[Join us on Slack](https://join.slack.com/t/zsoftlycloudp-exg5502/shared_invite/zt-469b56b2b-lG5HB2WnuntgwFG4UwfMew)
-([guidelines](https://zcp.zsoftly.ca/community)). For account or billing support, log in to the
-[ZCP portal](https://cloud.zcp.zsoftly.ca).
+Follow ZSoftly on [LinkedIn](https://www.linkedin.com/company/zsoftly-technologies),
+[X](https://x.com/ZSoftlyTI), [Reddit](https://www.reddit.com/r/zsoftly), and
+[YouTube](https://www.youtube.com/@zsoftly).
 
 <div align="center">
 
-[LinkedIn](https://www.linkedin.com/company/zsoftly-technologies) · info@zsoftly.ca · Made in Canada
-🇨🇦
+[Website](https://zcp.zsoftly.ca) · [GitHub](https://github.com/zsoftly) ·
+[LinkedIn](https://www.linkedin.com/company/zsoftly-technologies) · [X](https://x.com/ZSoftlyTI) ·
+[Reddit](https://www.reddit.com/r/zsoftly) · [YouTube](https://www.youtube.com/@zsoftly) ·
+[info@zsoftly.ca](mailto:info@zsoftly.ca)
 
 </div>
