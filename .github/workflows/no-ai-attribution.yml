@@ -4,11 +4,13 @@ on:
   workflow_call:
     inputs:
       runs-on:
-        description: Runner label or JSON array of labels.
+        description: >-
+          Runner label or JSON array of labels. Empty picks GitHub-hosted for public repos and the
+          shared self-hosted runners for private repos, which have few hosted minutes.
         type: string
-        default: '"ubuntu-latest"'
+        default: ''
       tools-ref:
-        description: Ref of zsoftly/.github that holds the script.
+        description: Ref of zsoftly/.github that holds the script. Callers stay on @main.
         type: string
         default: main
 
@@ -19,7 +21,7 @@ permissions:
 jobs:
   check:
     name: check
-    runs-on: ${{ fromJSON(inputs.runs-on) }}
+    runs-on: ${{ inputs.runs-on != '' && fromJSON(inputs.runs-on) || (github.event.repository.private && fromJSON('["self-hosted", "Linux", "zsoftly-iaas"]') || 'ubuntu-latest') }}
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

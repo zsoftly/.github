@@ -3,6 +3,7 @@ name: No AI attribution
 on:
   pull_request:
     types: [opened, edited, reopened, synchronize]
+  merge_group:
 
 permissions:
   contents: read

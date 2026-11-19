@@ -28,11 +28,14 @@ tool. Plain mentions of a tool, such as a commit about a CLI config, pass.
 
 `.github/workflows/no-ai-attribution.yml` is the reusable workflow. Each repository calls it with
 the caller in `workflow-templates/no-ai-attribution.yml`; never copy the logic. The check name is
-`no-ai-attribution / check`. Public repositories require it through a repository ruleset; on
+`no-ai-attribution / check`. Callers stay on `@main`, so one merge here updates every repository.
+Public repositories run it on GitHub-hosted runners, private ones on the shared self-hosted runners.
+Public repositories require it through a repository ruleset; on
 GitHub Free a private repository can run it but cannot require it.
 
 Dependabot and Renovate pull request descriptions are not checked, because they quote upstream
-release notes. Their commits are.
+release notes. Their commits are. A commit whose author or committer is an AI tool also fails,
+because a squash merge turns that author into a co-author trailer.
 
 To fix a failing pull request, reword the listed commits (`git rebase -i origin/main`, mark them
 `reword`, delete the line) and run `git push --force-with-lease`. Edit the title or description in

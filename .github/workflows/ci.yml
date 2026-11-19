@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: read
-  pull-requests: read
 
 jobs:
   test:
@@ -22,6 +21,9 @@ jobs:
 
   no-ai-attribution:
     if: github.event_name == 'pull_request'
+    permissions:
+      contents: read
+      pull-requests: read
     uses: ./.github/workflows/no-ai-attribution.yml
     with:
       tools-ref: ${{ github.event.pull_request.head.sha }}
