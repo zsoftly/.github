@@ -1,0 +1,6 @@
+{
+  "name": "No AI attribution",
+  "description": "Required ZSoftly check: fails a pull request whose commits, title or description carry AI attribution.",
+  "iconName": "octicon shield-check",
+  "categories": ["Automation"]
+}

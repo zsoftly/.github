@@ -1,0 +1,35 @@
+name: No AI attribution
+
+on:
+  workflow_call:
+    inputs:
+      runs-on:
+        description: Runner label or JSON array of labels.
+        type: string
+        default: '"ubuntu-latest"'
+      tools-ref:
+        description: Ref of zsoftly/.github that holds the script.
+        type: string
+        default: main
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  check:
+    name: check
+    runs-on: ${{ fromJSON(inputs.runs-on) }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: zsoftly/.github
+          ref: ${{ inputs.tools-ref }}
+          sparse-checkout: scripts/no-ai-attribution
+          persist-credentials: false
+      - name: Check commits, title and description
+        run: python3 scripts/no-ai-attribution/check.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
