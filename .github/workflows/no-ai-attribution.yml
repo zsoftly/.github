@@ -6,7 +6,7 @@ on:
       runs-on:
         description: >-
           Runner label, JSON array of labels, or JSON object with group and labels. Empty picks
-          GitHub-hosted for public repos and the light check runners in zs-shared-builders for
+          GitHub-hosted for public repos and the light check runners in zs-light-checks for
           private repos, which have few hosted minutes.
         type: string
         default: ''
@@ -22,7 +22,7 @@ permissions:
 jobs:
   check:
     name: check
-    runs-on: ${{ inputs.runs-on != '' && fromJSON(inputs.runs-on) || (github.event.repository.private && fromJSON('{"group":"zs-shared-builders","labels":["self-hosted","Linux","zsoftly-light"]}') || 'ubuntu-latest') }}
+    runs-on: ${{ inputs.runs-on != '' && fromJSON(inputs.runs-on) || (github.event.repository.private && fromJSON('{"group":"zs-light-checks","labels":["self-hosted","Linux","zsoftly-light"]}') || 'ubuntu-latest') }}
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
